@@ -1,0 +1,42 @@
+# README
+
+This repository contains an implmentation of the [Noclist](https://homework.adhoc.team/noclist) homework assignment.
+
+([COMMENTS](COMMENTS) and [README.md](README.md) are the same file.)
+
+## Installation
+
+You'll want to have Python >= 3.8.x available. If you have `virtualenv` installed, you can do:
+
+```
+$ git clone https://github.com/SSPJ/noclist.git
+$ cd noclist
+$ virtualenv -p $(which python3.8) .
+$ . bin/activate
+```
+
+To install the requirements, run:
+
+```
+(noclist) $ pip install -r requirements.txt
+```
+
+## Running the code
+
+You'll need a server listening on 127.0.0.1:8888, as described in the homework assignment. (If this is not the correct host/port, you can edit the base url in [badsec/urls.py](badsec/urls.py).)
+
+Ensure that [main.py](main.py) is executable, then run it:
+
+```
+(noclist) $ chmod u+x main.py
+(noclist) $ ./main.py
+```
+
+## Running the tests
+
+From the same directory as [main.py](main.py), run:
+
+```
+(noclist) $ pytest
+```
+
